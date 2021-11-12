@@ -6,6 +6,8 @@
 
 **STEP 1**: Run the Client App in one tab/window:
 
+> Note: Please wait for 10 seconds as it connects to AWS IoT after Authentication is done from AWS Cognito Identity Pool
+
 https://mohdmajidakhtar.github.io/ELL893/client/
 
 **STEP 2**: Run the Emulator App in another tab/window:
