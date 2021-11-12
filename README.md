@@ -34,7 +34,7 @@ https://mohdmajidakhtar.github.io/ELL893/client/
 
 https://mohdmajidakhtar.github.io/ELL893/emulator/
 
-**STEP 3**: Interact from client app and see changes in emulator 
+**STEP 3**: Interact from MQTT client app and see changes in MQTT emulator 
 
 ## Work Flow Diagram
 
