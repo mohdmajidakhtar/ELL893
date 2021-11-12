@@ -16,4 +16,4 @@ https://mohdmajidakhtar.github.io/ELL893/window
 
 ## Work Flow Diagram
 
-![poc_SmartHome](https://github.com/mohdmajidakhtar/ELL893/blob/master/images/mqtt_aws_iot_workflow.png)
+![MQTT AWT IoT Work Flow](https://github.com/mohdmajidakhtar/ELL893/blob/main/images/mqtt_aws_iot_workflow.png)
