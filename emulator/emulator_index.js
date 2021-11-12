@@ -125,7 +125,7 @@
       var datetime = currentdate.getDate() + "/" + (currentdate.getMonth()+1) 
       + "/" + currentdate.getFullYear() + " @ " 
       + currentdate.getHours() + ":" 
-      + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+      + currentdate.getMinutes() + ":" + currentdate.getSeconds() + ":" + currentdate.getMilliseconds();
       return datetime;
     }
 
@@ -166,8 +166,7 @@
     // Subscribe to lifecycle events on the first connect event.
     //
     window.mqttClientConnectHandler = function() {
-       console.log('Emulator connected to AWS IoT');
-       var messageTopublish = 'Connection Log: Emulator connected to AWS IoT';
+       var messageTopublish = {response: "Connection Log-> Emulator connected to AWS IoT"};
        var finalMessage = JSON.stringify(messageTopublish)
        mqttClient.publish('ELL893/muneeb_majid/smarthome/mqtt/connection', finalMessage);
        document.getElementById("connecting-div").style.visibility = 'hidden';
@@ -418,7 +417,7 @@
     document.getElementById('subscribe-div').style.visibility = 'visible';
     document.getElementById('connecting-div').style.visibility = 'visible';
     document.getElementById('explorer-div').style.visibility = 'hidden';
-    document.getElementById('connecting-div').innerHTML = '<p>attempting to connect to aws iot...</p>';
+    document.getElementById('connecting-div').innerHTML = '<p>Attempting to connect to AWS IoT Core...Please wait, it may take 10-20 seconds</p>';
     
     },{"./aws-configuration.js":1,"aws-iot-device-sdk":"aws-iot-device-sdk","aws-sdk":"aws-sdk"}]},{},[2]);
     

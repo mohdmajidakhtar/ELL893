@@ -85,7 +85,7 @@ function getTime(){
    var datetime = currentdate.getDate() + "/" + (currentdate.getMonth()+1) 
    + "/" + currentdate.getFullYear() + " @ " 
    + currentdate.getHours() + ":" 
-   + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+   + currentdate.getMinutes() + ":" + currentdate.getSeconds() + ":" + currentdate.getMilliseconds();
    return datetime;
  }
 
@@ -210,9 +210,9 @@ window.isUndefined = function(value) {
 window.mqttClientMessageHandler = function(topic, payload) {
    var receivedMessage = JSON.parse(payload);
    if(receivedMessage.response){
-      messageHistory = "-> "+ getTime().bold() + ": Response received from device: ".fontcolor("green")+ topic + ': ' + payload.toString() + '</br>' + messageHistory;
+      messageHistory = "-> "+ getTime().bold() + ": Response received from Emulator: ".fontcolor("green")+ topic + ': ' + payload.toString() + '</br>' + messageHistory;
    }else{
-      messageHistory = "-> "+ getTime().bold() + ": Command sent to device: ".fontcolor("blue")+ topic + ': ' + payload.toString() + '</br>'  + messageHistory;
+      messageHistory = "-> "+ getTime().bold() + ": Command sent to Emulator: ".fontcolor("blue")+ topic + ': ' + payload.toString() + '</br>'  + messageHistory;
    }
    document.getElementById('subscribe-div').innerHTML = '<p>' + messageHistory + '</p>';
 };
@@ -388,6 +388,6 @@ mqttClient.on('message', window.mqttClientMessageHandler);
 //
 document.getElementById('connecting-div').style.visibility = 'visible';
 document.getElementById('explorer-div').style.visibility = 'hidden';
-document.getElementById('connecting-div').innerHTML = '<p> Attempting to connect to AWS IoT Core...</p>';
+document.getElementById('connecting-div').innerHTML = '<p>Attempting to connect to AWS IoT Core...Please wait, it may take 10-20 seconds</p>';
 
 },{"./aws-configuration.js":1,"aws-iot-device-sdk":"aws-iot-device-sdk","aws-sdk":"aws-sdk"}]},{},[2]);
