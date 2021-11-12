@@ -23,9 +23,9 @@ The answer is YES using Internet of Things, but the question still remains how? 
 
 > Note: Please wait for 10-20 seconds as it connects to AWS IoT after Authentication is done from AWS Cognito Identity Pool
 
-Provide these test credentials while choosing between communication protocol: 
-> Username: Muneeb
-> Password: Majid
+>Provide these test credentials while choosing between communication protocol:  
+**Username**: Muneeb  
+**Password**: Majid
 
 https://mohdmajidakhtar.github.io/ELL893/client/
 
@@ -86,7 +86,7 @@ https://mohdmajidakhtar.github.io/ELL893/emulator/
 ```
 
 ## Logs and Reports
-We have provided logs for different kinds of information with different color codes representing error logs, connection logs, command logs and response logs.
+We have provided logs for different kinds of information with different color codes representing error logs, connection logs, command logs and response logs.  
 ![Logs](https://github.com/mohdmajidakhtar/ELL893/blob/main/images/logs.png)
 
 
@@ -101,7 +101,7 @@ https://github.com/muneebpandith/ELL893
 
 ## Conclusion
 We observed MQTT over WSS to be more efficient as it provides low latency and better guarantee of delivery. The comparison is shown in figure below. 
-![Latency Comparison between HTTP and MQTT-over-WSS](https://github.com/mohdmajidakhtar/ELL893/blob/main/images/mqtt_vs_http.png)
+![Latency Comparison between HTTP and MQTT-over-WSS](https://github.com/mohdmajidakhtar/ELL893/blob/main/images/mqtt_vs_http.png)  
 We envision our solution is beneficial towards the society in reducing the transmission of novel COVID-19. Along with it, the developed project can be applied to any smart home setting like a hotel or public place where social distancing is required to reduce the transmission of virus by touching surfaces.
 
 
