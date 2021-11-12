@@ -6,11 +6,11 @@
 
 **STEP 1**: Run the Client App in one tab/window:
 
-https://mohdmajidakhtar.github.io/ELL893/client
+https://mohdmajidakhtar.github.io/ELL893/client/
 
 **STEP 2**: Run the Emulator App in another tab/window:
 
-https://mohdmajidakhtar.github.io/ELL893/window
+https://mohdmajidakhtar.github.io/ELL893/emulator/
 
 **STEP 3**: Interact from client app and see changes in emulator 
 
