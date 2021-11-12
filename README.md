@@ -18,4 +18,4 @@ https://mohdmajidakhtar.github.io/ELL893/emulator/
 
 ## Work Flow Diagram
 
-![MQTT AWT IoT Work Flow](https://github.com/mohdmajidakhtar/ELL893/blob/main/images/mqtt_aws_iot_workflow.png)
+![MQTT AWT IoT Work Flow](https://github.com/mohdmajidakhtar/ELL893/blob/main/mqtt_aws_iot_workflow.png)
