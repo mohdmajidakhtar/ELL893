@@ -24,8 +24,8 @@ The answer is YES using Internet of Things, but the question still remains how? 
 > Note: Please wait for 10-20 seconds as it connects to AWS IoT after Authentication is done from AWS Cognito Identity Pool
 
 >Provide these test credentials while choosing between communication protocol:  
-**Username**: Muneeb  
-**Password**: Majid
+**Username**: muneeb  
+**Password**: majid
 
 https://mohdmajidakhtar.github.io/ELL893/client/
 
